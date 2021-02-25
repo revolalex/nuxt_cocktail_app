@@ -90,8 +90,13 @@ export default {
   padding: 60px;
 }
 #cocktailImg {
-  width: 100%;
   max-width: 160px;
   height: auto;
+}
+@media (max-width: 600px) {
+  #cocktailImg {
+    max-width: 60px;
+    height: auto;
+  }
 }
 </style>
