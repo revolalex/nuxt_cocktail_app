@@ -5,9 +5,9 @@
       size="sm"
       class="mr-sm-2"
       v-model="text"
-      placeholder="Search a cocktail: martini, kir "
+      placeholder="Search a cocktail:"
     ></b-form-input>
-    <b-button size="sm" class="my-2 my-sm-0" type="submit" variant="info"
+    <b-button  size="sm" class="my-2 my-sm-0 mx-auto" type="submit" variant="info"
       >🍹Search</b-button
     ></b-form
   >
