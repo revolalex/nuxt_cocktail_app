@@ -95,8 +95,13 @@ export default {
 }
 @media (max-width: 441px) {
   #cocktailImg {
-   max-width: 60px;
-    max-height: 70px;
+    position: relative;
+    top: -110px;
+    max-width: 70px;
+    max-height: 80px;
+  }
+  .mycontainer {
+    width: 110vw;
   }
 }
 </style>
