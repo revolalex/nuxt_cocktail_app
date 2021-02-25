@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       cocktails: null,
-      titre: "Spirit"
+      titre: "Liquor"
     }
   },
   computed: {
