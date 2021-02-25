@@ -3,7 +3,7 @@
     <Titre :titre="titre" />
     <div class="whiteColor aboutText">
       <vue-typed-js
-      :typeSpeed="60"
+        :typeSpeed="60"
         :startDelay="200"
         :backSpeed="20"
         :backDelay="200"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="neon">{{titre}}</h1>
+    <h1 class="neon">{{ titre }}</h1>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 
 h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 7rem;
+  font-size: 5rem;
   text-align: center;
 }
 </style>

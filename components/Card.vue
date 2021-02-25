@@ -10,7 +10,7 @@
         :img-src="element.strDrinkThumb"
         img-alt="Cocktail"
         img-top
-        tag="Cocktail"
+
         style="min-width: 12rem"
         class="mb-4 mt-4 myCard"
       >
@@ -30,7 +30,7 @@ export default {
 
 <style>
 .myCard {
-text-shadow: 3px 3px 2px rgb(255, 0, 212);
+  text-shadow: 3px 3px 2px rgb(255, 0, 212);
 }
 .myContainerCard {
   width: 90vw;

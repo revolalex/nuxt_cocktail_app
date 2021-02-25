@@ -1,9 +1,16 @@
 <template>
   <div class="myBackground">
     <Titre :titre="titre" />
-    <a href="https://github.com/revolalex"><img id="gitLogo" src="../assets/git.png" alt="" /></a>
+    <a href="https://github.com/revolalex"
+      ><img id="gitLogo" src="../assets/git.png" alt=""
+    /></a>
 
-    <a href="https://www.linkedin.com/in/alexandre-rodrigueza/"><img id="gitLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="" /></a>
+    <a href="https://www.linkedin.com/in/alexandre-rodrigueza/"
+      ><img
+        id="gitLogo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png"
+        alt=""
+    /></a>
   </div>
 </template>
 
@@ -41,7 +48,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-#gitLogo:hover{
-
+#gitLogo:hover {
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div class="myBackground">
-    <Titre :titre="titre"/>
+    <Titre :titre="titre" />
     <Search v-on:searchClicked="searchWasClicked" />
-    <Table v-if="cocktails" v-bind:cocktails="cocktails"/>  
+    <Table v-if="cocktails" v-bind:cocktails="cocktails" />
   </div>
 </template>
 
@@ -14,12 +14,14 @@ import Titre from '../components/Titre'
 
 export default {
   components: {
-    Search, Table, Titre
+    Search,
+    Table,
+    Titre,
   },
   data() {
     return {
       cocktails: null,
-      titre: "Cocktail name"
+      titre: 'Cocktail name',
     }
   },
   computed: {
