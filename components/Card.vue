@@ -4,18 +4,22 @@
       <b-card
         overlay
         text-variant="white"
-        v-for="(element, index) in cocktails"
-        v-bind:key="index"
+        v-for="element in cocktails"
+        v-bind:key="element.idDrink"
         :title="element.strDrink"
         :img-src="element.strDrinkThumb"
         img-alt="Cocktail"
         img-top
-
         style="min-width: 12rem"
         class="mb-4 mt-4 myCard"
       >
-      </b-card
-    ></b-card-group>
+        <template #footer>
+          <a id="myLinkCard" href="#" @click="detailClicked(element.idDrink)"
+            >Detail</a
+          >
+        </template>
+      </b-card></b-card-group
+    >
   </div>
 </template>
 
@@ -24,6 +28,11 @@ export default {
   name: 'Card',
   props: {
     cocktails: Array,
+  },
+  methods: {
+    detailClicked(id) {
+      this.$emit('detailClicked', id)
+    },
   },
 }
 </script>
@@ -36,5 +45,9 @@ export default {
   width: 90vw;
   margin: auto;
   padding: 60px;
+}
+#myLinkCard {
+  text-shadow: none;
+  color: #fc2192;
 }
 </style>
