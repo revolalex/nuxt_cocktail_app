@@ -101,7 +101,7 @@ export default {
     max-height: 80px;
   }
   .mycontainer {
-    width: 110vw;
+    width: 100vw;
   }
 }
 </style>

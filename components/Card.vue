@@ -1,5 +1,5 @@
 <template>
-  <div class="mycontainer">
+  <div class="myContainerCard">
     <b-card-group deck>
       <b-card
         overlay
@@ -31,5 +31,10 @@ export default {
 <style>
 .myCard {
 text-shadow: 3px 3px 2px rgb(255, 0, 212);
+}
+.myContainerCard {
+  width: 90vw;
+  margin: auto;
+  padding: 60px;
 }
 </style>
