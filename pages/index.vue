@@ -1,32 +1,45 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">nuxt-pro-alex</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div class="myBackground">
+    <Titre :titre="titre"/>
+    <Search v-on:searchClicked="searchWasClicked" />
+    <Table v-if="cocktails" v-bind:cocktails="cocktails"/>  
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+import Search from '../components/Search'
+import Table from '../components/Table'
+import Titre from '../components/Titre'
+
 export default {
+  components: {
+    Search, Table,
+  },
+  data() {
+    return {
+      cocktails: null,
+      titre: "Cocktail hour"
+    }
+  },
+  computed: {
+    hasCocktails() {
+      if (this.cocktails != null) {
+        return true
+      } else {
+        return false
+      }
+    },
+  },
+  methods: {
+    async searchWasClicked(text) {
+      const res = await axios.get(
+        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${text}`
+      )
+      this.cocktails = res.data.drinks
+      console.log(this.cocktails)
+    },
+  },
   head() {
     return {
       title: 'Cocktail search',
@@ -34,7 +47,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'home cocktail',
+          content: 'Search a cocktail',
         },
       ],
     }
@@ -43,34 +56,14 @@ export default {
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
+/* Backgroun image */
+.myBackground {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  background: url(https://www.hennessy.com/sites/hennessy_fr/files/2020-01/HEADER_COCKTAIL_2880x1540.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>
