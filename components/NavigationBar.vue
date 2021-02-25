@@ -10,6 +10,9 @@
             ><nuxt-link to="/">Cocktail</nuxt-link></b-nav-item
           >
           <b-nav-item href="#"
+            ><nuxt-link to="/ingredient">Ingredient</nuxt-link></b-nav-item
+          >
+          <b-nav-item href="#"
             ><nuxt-link to="/about">About</nuxt-link></b-nav-item
           >
           <b-nav-item href="#"

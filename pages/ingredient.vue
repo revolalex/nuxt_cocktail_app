@@ -2,24 +2,24 @@
   <div class="myBackground">
     <Titre :titre="titre"/>
     <Search v-on:searchClicked="searchWasClicked" />
-    <Table v-if="cocktails" v-bind:cocktails="cocktails"/>  
+    <Card v-if="cocktails" v-bind:cocktails="cocktails"/>  
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import Search from '../components/Search'
-import Table from '../components/Table'
+import Card from '../components/Card'
 import Titre from '../components/Titre'
 
 export default {
   components: {
-    Search, Table, Titre
+    Search, Card, Titre
   },
   data() {
     return {
       cocktails: null,
-      titre: "Cocktail name"
+      titre: "Ingredient"
     }
   },
   computed: {
@@ -34,7 +34,7 @@ export default {
   methods: {
     async searchWasClicked(text) {
       const res = await axios.get(
-        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${text}`
+        `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${text}`
       )
       this.cocktails = res.data.drinks
       console.log(this.cocktails)
