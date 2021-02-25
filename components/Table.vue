@@ -93,10 +93,10 @@ export default {
   max-width: 160px;
   height: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 441px) {
   #cocktailImg {
-    max-width: 60px;
-    height: auto;
+   max-width: 60px;
+    max-height: 70px;
   }
 }
 </style>
