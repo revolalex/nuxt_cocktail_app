@@ -81,6 +81,8 @@ select {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -10;
 
   /* min-height: 100vh;
   height: 100%;
