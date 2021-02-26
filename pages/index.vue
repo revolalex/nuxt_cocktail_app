@@ -58,29 +58,29 @@ export default {
 </script>
 
 <style>
-
-body { font-size: 16px; }
-input, select { font-size: 100%; }
+body {
+  font-size: 16px;
+}
+input,
+select {
+  font-size: 100%;
+}
 /* Backgroun image */
 .myBackground {
   min-height: 100vh;
   background: url(https://www.hennessy.com/sites/hennessy_fr/files/2020-01/HEADER_COCKTAIL_2880x1540.jpg);
-    /* no-repeat center center fixed; */
-    
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-
-
 
   /* Full height */
-  width: 100%;
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 </style>
