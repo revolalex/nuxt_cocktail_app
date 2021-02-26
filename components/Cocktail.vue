@@ -58,7 +58,7 @@
                 <h6>Instruction:</h6>
                 {{ cocktail[0].strInstructions }}
               </b-card-text>
-              <b-button href="#" variant="info" @click="closeClicked"
+              <b-button href="#" variant="dark" @click="closeClicked"
                 >Close</b-button
               >
             </b-card-body>

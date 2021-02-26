@@ -93,4 +93,14 @@ select {
   background-repeat: no-repeat;
   z-index: -10; */
 }
+
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+      .myBackground{
+        background-attachment: initial;
+      }
+     }
 </style>
