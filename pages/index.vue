@@ -72,7 +72,6 @@ select {
 }
 /* Backgroun image */
 .myBackground {
-  min-height: 100vh;
   background: url('../assets/bg.png');
   /* Full height */
   height: 100%;
