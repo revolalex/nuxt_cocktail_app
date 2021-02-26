@@ -58,6 +58,10 @@ export default {
 </script>
 
 <style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
   font-size: 16px;
 }
