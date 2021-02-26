@@ -1,5 +1,5 @@
 <template>
-  <div class="myBackground">
+  <div class="myBackground" fluid>
     <Titre :titre="titre" />
     <Search v-on:searchClicked="searchWasClicked" />
     <Table v-if="cocktails" v-bind:cocktails="cocktails" />
@@ -72,12 +72,15 @@ select {
 }
 /* Backgroun image */
 .myBackground {
-  background: url('../assets/bg.png') no-repeat center center fixed;
+  background: url('../assets/bg.png');
+  height: 100%;
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 
   /* min-height: 100vh;
   height: 100%;
