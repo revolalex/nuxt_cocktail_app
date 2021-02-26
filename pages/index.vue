@@ -89,9 +89,4 @@ select {
   background-attachment: fixed;
 }
 
-@media (max-width: 600px) {
-  .myBackground {
-   object-fit: contain;
-  }
-}
 </style>
