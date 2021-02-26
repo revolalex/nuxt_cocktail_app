@@ -65,6 +65,8 @@ body {
 }
 body {
   font-size: 16px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 input,
 select {
@@ -73,6 +75,7 @@ select {
 /* Backgroun image */
 .myBackground {
   background: url('../assets/bg.png');
+  z-index: -100;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
