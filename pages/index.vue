@@ -73,7 +73,14 @@ select {
 /* Backgroun image */
 .myBackground {
   background: url('../assets/bg.png');
-  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+
+  /* background-position: top center;
   background-size: 100vw auto;
   height: 100%;
   min-height: 100vh;
@@ -83,28 +90,6 @@ select {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-
-  /* min-height: 100vh;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  overflow: hidden;
-  background-attachment: fixed !important; */
+  z-index: -10; */
 }
-/* iphone X */ /* Iphone 11 */
-/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .myBackground {
-
-  }
-}
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-  .myBackground {
-
-  }
-} */
 </style>
