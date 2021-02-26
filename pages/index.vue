@@ -100,35 +100,9 @@ select {
 } */
 @media only screen and (max-width: 600px) {
   .myBackground {
-    /* background: url('#');
-    background: #333B3F; */
-       background: linear-gradient(62deg, #3f3333, #052231, #220827, #37333f);
-     animation: gradient 5s ease infinite; 
-      background-size: 400% 400%;
-    
+    background: url('#');
+    background: #333B3F;
   }
 }
 
-@-webkit-keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
-}
-@keyframes gradient{
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-     background-position: 0% 50%;
-  }
-}
 </style>
