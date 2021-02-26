@@ -74,6 +74,7 @@ select {
 .myBackground {
   background: url('../assets/bg.png');
   /* Full height */
+  min-height: 100vh;
   height: 100%;
   /* Create the parallax scrolling effect */
   background-position: center;
@@ -85,4 +86,31 @@ select {
   overflow: hidden;
   background-attachment: fixed;
 }
+/* iphone X *//* Iphone 11 */
+/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .myBackground {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .myBackground {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+} */
 </style>
