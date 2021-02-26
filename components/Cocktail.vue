@@ -1,7 +1,12 @@
 <template>
   <div>
     <div class="mycontainer">
-      <b-card no-body class="overflow-hidden mx-auto" style="max-width: 580px" border-variant="info">
+      <b-card
+        no-body
+        class="overflow-hidden mx-auto"
+        style="max-width: 580px"
+        border-variant="info"
+      >
         <b-row no-gutters>
           <b-col md="6">
             <b-card-img

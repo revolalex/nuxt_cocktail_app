@@ -58,9 +58,10 @@ export default {
 </script>
 
 <style>
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   font-size: 16px;
@@ -73,12 +74,9 @@ select {
 .myBackground {
   min-height: 100vh;
   background: url('../assets/bg.png');
-
   /* Full height */
   height: 100%;
-
   /* Create the parallax scrolling effect */
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,5 +86,4 @@ select {
   overflow: hidden;
   background-attachment: fixed;
 }
-
 </style>

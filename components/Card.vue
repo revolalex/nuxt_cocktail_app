@@ -48,16 +48,13 @@ export default {
   padding: 60px;
 }
 #myLinkCard {
-
   font-weight: 600;
   font-size: 1.1rem;
   text-shadow: none;
-  color: #14A3B8;
+  color: #14a3b8;
 }
-
 
 .myCard:hover {
- opacity: 1;
+  opacity: 1;
 }
-
 </style>

@@ -7,7 +7,11 @@
       v-bind:cocktails="cocktails"
       v-on:detailClicked="showDetail"
     />
-    <Cocktail  v-bind:cocktail="cocktail" v-if="!show" v-on:closeClicked="closeWasClicked"/>
+    <Cocktail
+      v-bind:cocktail="cocktail"
+      v-if="!show"
+      v-on:closeClicked="closeWasClicked"
+    />
   </div>
 </template>
 
@@ -23,7 +27,7 @@ export default {
     Search,
     Card,
     Titre,
-    Cocktail
+    Cocktail,
   },
   data() {
     return {
@@ -54,12 +58,12 @@ export default {
         `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
       )
       this.cocktail = res.data.drinks
-      console.log(this.cocktail);
-      this.show= false
+      console.log(this.cocktail)
+      this.show = false
     },
-    closeWasClicked(){
-      this.show= true
-    }
+    closeWasClicked() {
+      this.show = true
+    },
   },
   head() {
     return {
@@ -77,14 +81,4 @@ export default {
 </script>
 
 <style>
-/* Backgroun image */
-/* .myBackground {
-  min-height: 100vh;
-  background: url(https://www.hennessy.com/sites/hennessy_fr/files/2020-01/HEADER_COCKTAIL_2880x1540.jpg)
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
 </style>
