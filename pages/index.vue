@@ -73,16 +73,17 @@ select {
 /* Backgroun image */
 .myBackground {
   background: url('../assets/bg.png');
+  background-position: top center;
+  background-size: 100vw auto;
   height: 100%;
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  z-index: -10;
+
 
   /* min-height: 100vh;
   height: 100%;
