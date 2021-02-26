@@ -63,9 +63,10 @@ export default {
   min-height: 100vh;
   background: url(https://www.hennessy.com/sites/hennessy_fr/files/2020-01/HEADER_COCKTAIL_2880x1540.jpg)
     no-repeat center center fixed;
-  -webkit-background-size: cover;
+    
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 </style>

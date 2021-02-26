@@ -40,6 +40,7 @@ export default {
 <style>
 .myCard {
   text-shadow: 3px 3px 2px rgb(255, 0, 212);
+  opacity: 0.8;
 }
 .myContainerCard {
   width: 90vw;
@@ -47,7 +48,16 @@ export default {
   padding: 60px;
 }
 #myLinkCard {
+
+  font-weight: 600;
+  font-size: 1.1rem;
   text-shadow: none;
-  color: #fc2192;
+  color: #14A3B8;
 }
+
+
+.myCard:hover {
+ opacity: 1;
+}
+
 </style>
