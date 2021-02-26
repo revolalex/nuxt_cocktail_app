@@ -58,6 +58,9 @@ export default {
 </script>
 
 <style>
+
+body { font-size: 16px; }
+input, select { font-size: 100%; }
 /* Backgroun image */
 .myBackground {
   min-height: 100vh;
@@ -72,7 +75,7 @@ export default {
 
 
   /* Full height */
-  height: 100%;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
