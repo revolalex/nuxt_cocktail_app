@@ -94,9 +94,41 @@ select {
   z-index: -10; */
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .myBackground {
-    background-attachment: initial;
+  }
+} */
+@media only screen and (max-width: 600px) {
+  .myBackground {
+    /* background: url('#');
+    background: #333B3F; */
+       background: linear-gradient(62deg, #3f3333, #052231, #220827, #37333f);
+     animation: gradient 5s ease infinite; 
+      background-size: 400% 400%;
+    
+  }
+}
+
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
   }
 }
 </style>
