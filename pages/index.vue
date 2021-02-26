@@ -86,27 +86,31 @@ select {
   overflow: hidden;
   background-attachment: fixed;
 }
-/* iphone X *//* Iphone 11 */
+/* iphone X */ /* Iphone 11 */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .myBackground {
-  background: url('../assets/bg.png') no-repeat fixed;;
+    background: url('../assets/bg.png');
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
   }
 }
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .myBackground {
-  background: url('../assets/bg.png') no-repeat fixed;;
+    background: url('../assets/bg.png');
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
   }
 }
 </style>
