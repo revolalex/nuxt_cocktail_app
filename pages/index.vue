@@ -99,8 +99,9 @@ select {
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 2) {
       .myBackground{
-        background-attachment: initial;
-        visibility: always;
+        /* background-attachment: initial;
+        visibility: always; */
+        background-attachment: scroll;
       }
      }
 </style>
