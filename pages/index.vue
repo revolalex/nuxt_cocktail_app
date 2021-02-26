@@ -89,8 +89,7 @@ select {
 /* iphone X */ /* Iphone 11 */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .myBackground {
-    background-repeat: no-repeat;
-    height: 100%;
+    height: 812px;
     width: 100% !important;
     max-width: 100%;
     display: block !important;
@@ -98,8 +97,7 @@ select {
 }
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
   .myBackground {
-    background-repeat: no-repeat;
-    height: 100%;
+    height: 896px;
     width: 100% !important;
     max-width: 100%;
     display: block !important;
